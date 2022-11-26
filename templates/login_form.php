@@ -23,6 +23,6 @@
 		</div>
 	</form>
 	<div>
-		or <a href="register.php">register</a>
+		or <a href="register.php">Sign Up</a>
 	</div>
 </div>
