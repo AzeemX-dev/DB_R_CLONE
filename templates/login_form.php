@@ -2,7 +2,7 @@
 <div class="container" style="width:300px">
 
 	<form class="form-signin" action="login.php" method="post">
-		<h2 class="form-signin-heading">Please sign in</h2>
+		<h2 class="form-signin-heading">Please Sign In</h2>
 		
 		<div class="form-group">
 			<label for="inputEmail" class="sr-only">Email address</label>
