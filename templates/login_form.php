@@ -15,7 +15,7 @@
 		</div>
 		
 		<div class="form-group">
-			<p><small>* PASS WJEEH FOR USER WJEEH </small></p>
+			<p><small>* PASS 123 FOR USER WJEEH </small></p>
 		</div>
 		
 		<div class="form-group">
