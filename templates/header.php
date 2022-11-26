@@ -42,7 +42,7 @@
 								echo "<a href=\"user.php\" class=\"navbar-link\">";
 								echo $_SESSION["user"]["username"];
 								echo "</a> (";
-								echo "<a href=\"logout.php\" class=\"navbar-link\" >logout";
+								echo "<a href=\"logout.php\" class=\"navbar-link\" >Sign Out";
 								echo "</a>)";
 							}
 						?>
