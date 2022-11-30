@@ -1,6 +1,6 @@
 </div>
 <div id=footer>
-Copyright &#169; Adeel Hassan
+<center>Reddit Clone by Group 23<center>
 </div>
 </body>
 </html>
