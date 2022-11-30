@@ -116,7 +116,7 @@
 						
 						WHERE p.soc_id = ? AND p.status != 'DELETED'
 						GROUP BY p.post_id
-						ORDER BY rank DESC, votes DESC, views DESC
+						ORDER BY `rank` DESC, votes DESC, views DESC
 						LIMIT ?
 						OFFSET ?",
 
