@@ -81,12 +81,16 @@
 					{
 						foreach($posts as $p)
 						{
+							if($p[‘status’] != “DELETED”)
+							{
+
 							echo "<div class=\"row\">";
 
 							echo to_html(post_summary($p, $p["society"], true));
 
 							echo "</div>";
 							echo "<hr>";
+							}
 						}
 					}
 				?>
