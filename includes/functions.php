@@ -234,7 +234,7 @@
             // render template
             require("../templates/$template");
             
-            //require("../templates/footer.php");
+            require("../templates/footer.php");
         }
         else
         {
@@ -257,7 +257,7 @@
             // render template
             require("../templates/$template");
     	}        
-        //require("../templates/footer.php");
+        require("../templates/footer.php");
     }
 
 	/**
