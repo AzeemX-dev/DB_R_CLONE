@@ -81,7 +81,7 @@
 					{
 						foreach($posts as $p)
 						{
-							if($p[‘status’] != “DELETED”)
+							if($p["status"] != "DELETED")
 							{
 
 							echo "<div class=\"row\">";
