@@ -139,7 +139,7 @@ if (isset($_POST["submitSoc"])) {
 			</tr>
 			<tr>
 			
-				<td><a href="soc.php?u=<?php echo ($row->soc_name); ?>"><?php echo ($row->soc_name); ?></a></td>
+				<td><a href="soc.php?soc=<?php echo ($row->soc_name); ?>"><?php echo ($row->soc_name); ?></a></td>
 				<td><?php echo $row->status;?></td>
 			</tr>
 
