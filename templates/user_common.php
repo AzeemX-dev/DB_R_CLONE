@@ -1,30 +1,3 @@
-<!-- New PM modal -->
-<div>
-	<div id="new-pm" class="modal fade">
-		<div class="modal-dialog" role="form">
-			<div class="modal-content">
-				<div class="modal-header">
-					<a class="close" data-dismiss="modal">×</a>
-					<h3>Send Private Message</h3>
-				</div>
-				<form id="pmf" class="pm" method="POST" action=<?php echo "\""."new_pm.php"."\""; ?> >
-					<div class="modal-body">
-						<div class="form-group">
-							<input name="subject" class="form-control" type="text" placeholder="Subject">
-						</div>
-						<div class="form-group">
-							<textarea name="text" class="form-control" rows="4" placeholder="Message"></textarea>
-							<input class="hidden" name="to" value=<?php echo $u["username"]; ?> id="new-pm-btn">
-						</div>
-					<div class="modal-footer">
-						<input class="btn btn-default" type="submit" value="Send" id="new-pm-btn">
-						<a href="#" class="btn" data-dismiss="modal">Cancel</a>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-</div>
 
 <!-- user-report modal -->
 <div>
