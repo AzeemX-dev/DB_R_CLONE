@@ -3,14 +3,18 @@
 	<div class="panel-heading">
 		<div class="row">
 			<h3 class="col-md-3">About <?php echo $soc["soc_name"]; ?></h3>
-			
+			<div class="col-md-9" style="float:right;">
+				<div style="float:right;">
+				<a class="btn btn-default" data-toggle="modal" data-target="#soc-info-edit"><i class="fa fa-pencil-square-o"/></i>	Edit</a>
+				
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="panel-body well">
 		<?php 
 			if ($soc["info"])
 			{
-				
 				echo "<div class=\"well\"><p>".$soc["info"]."</p></div>";
 			}
 		?>
