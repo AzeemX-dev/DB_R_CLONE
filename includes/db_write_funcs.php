@@ -688,18 +688,6 @@
 					 );
 	}
 
-	function make_pm($to, $subj = null, $msg)
-	{
-		return tquery("	INSERT INTO pms(sender, receiver, subject, msg) 
-						VALUES(?, ?, ?, ?)", 
-						[
-							$_SESSION["user"]["user_id"],
-							$to["user_id"],
-							$subj,
-							$msg
-						]
-					);	
-	}
 
 	function edit_soc_info($sid, $info)
 	{
