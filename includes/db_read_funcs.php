@@ -3,13 +3,15 @@
 	/**
 		Soc functions
 	*/
-	function get_society($sname, $show_deleted = false)
+function get_society($sname, $show_deleted = false)
 	{
-		return  (($s = query("	SELECT 	s.*, d.info
+		return  (($s = query("	SELECT 	s.*, d.info, d.revised_by
 								FROM societies s 
-								LEFT JOIN soc_details d on d.soc_id = s.soc_id
+								LEFT JOIN soc_details d on s.soc_id = d.soc_id 
 								
 								WHERE s.soc_name = ?
+								ORDER BY d.time
+								DESC LIMIT 1
 								",
 								$sname
 					  		)
@@ -18,7 +20,6 @@
 				)
 				? $s[0]:false;
 	}
-
 	function get_society_by_id($sid, $show_deleted = false)
 	{
 		return  (($s = query("	SELECT 	s.*, 
