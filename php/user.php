@@ -22,8 +22,6 @@
 
 	static $umap = [
 						"profile" => "profile.php",
-						"inbox" => "inbox.php",
-						"outbox" => "outbox.php",
 						"phist" => "uphist.php",
 						"chist" => "uchist.php",
 						"socs" => "usocs.php"
