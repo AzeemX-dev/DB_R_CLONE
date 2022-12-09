@@ -68,7 +68,7 @@
 				"<li class=\"".($t=="socs" ? "active":"")."\" >".
 					"<a href=\"".$pg."socs"."\" >".
 						"<span class=\"glyphicon glyphicon-home\"></span>".
-						" Societies".
+						"Subreddits".
 					"</a>".
 				"</li>";
 		}
