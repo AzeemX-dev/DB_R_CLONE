@@ -33,7 +33,7 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<a class="close" data-dismiss="modal">×</a>
-					<h3 id="report-soc-heading">Report society</h3>
+					<h3 id="report-soc-heading">Report Subreddit</h3>
 				</div>
 				<form id="soc_report_f" class="" method="POST" action=<?php echo "\"report_soc.php?soc=".$soc["soc_name"]."\""; ?> >
 					<div class="modal-body">
