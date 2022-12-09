@@ -1,7 +1,7 @@
 <script type="text/javascript">
   $(document).ready(function () {
     $('#uphist').DataTable();
-    $('#uphist_wrapper').css({"padding":"10px"});
+    $('#uphist_wrapper').css({"padding":"75px"});
   });
 </script>
 
