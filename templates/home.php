@@ -65,6 +65,97 @@
 	});
 </script>
 
+
+<form method="post">
+<label>Search Users</label>
+<input type="text" name="searchUsers">
+<input type="submit" name="submitUsers">
+	
+<form method="post">
+<label>Search Societies</label>
+<input type="text" name="searchSoc">
+<input type="submit" name="submitSoc">
+</form>
+
+</body>
+</html>
+
+<?php
+$con = new PDO("mysql:host=localhost;dbname=reddit_clone",'root','NewPassword');
+
+
+
+
+
+
+if (isset($_POST["submitUsers"])) {
+	$str = $_POST["searchUsers"];
+	$sth = $con->prepare("SELECT * FROM `users` WHERE username = '$str'");
+
+	$sth->setFetchMode(PDO:: FETCH_OBJ);
+	$sth -> execute();
+
+	if($row = $sth->fetch())
+	{
+		?>
+		<br><br><br>
+		<table>
+			<tr>
+				<th>Username</th>
+				<th>Status</th>
+			</tr>
+			<tr>
+			
+				<td><a href="user.php?u=<?php echo ($row->username); ?>"><?php echo ($row->username); ?></a></td>
+				<td><?php echo $row->status;?></td>
+			</tr>
+
+		</table>
+<?php 
+	}
+		
+		
+		else{
+			echo "User Does not exist";
+		}
+
+
+}
+if (isset($_POST["submitSoc"])) {
+	$str2 = $_POST["searchSoc"];
+	$sth = $con->prepare("SELECT * FROM `societies` WHERE soc_name = '$str2'");
+
+	$sth->setFetchMode(PDO:: FETCH_OBJ);
+	$sth -> execute();
+
+	if($row = $sth->fetch())
+	{
+		?>
+		<br><br><br>
+		<table>
+			<tr>
+				<th>Society Name</th>
+				<th>Status</th>
+			</tr>
+			<tr>
+			
+				<td><a href="user.php?u=<?php echo ($row->soc_name); ?>"><?php echo ($row->status); ?></a></td>
+				<td><?php echo $row->status;?></td>
+			</tr>
+
+		</table>
+<?php 
+	}
+		
+		
+		else{
+			echo "Society Does not exist";
+		}
+
+
+}?>
+
+
 <!-- news feed -->
 <div class="row container-fluid" style="">
 	<div class="col-md-10 container-fluid">
