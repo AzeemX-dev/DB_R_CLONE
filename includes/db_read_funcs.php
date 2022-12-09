@@ -595,30 +595,6 @@
 				$u[0]:false;
 	}
 
-	function get_inbox()
-	{
-		return query("SELECT p.*, 
-							 s.username \"sender\"-- ,
-							 -- if(p.read_time is NULL, 'UNREAD', 'READ') \"status\"
-						FROM pms p
-						JOIN users s on s.user_id = p.sender
-						WHERE p.receiver = ?
-						ORDER BY p.time DESC",
-						$_SESSION["user"]["user_id"]
-					);
-	}
-
-	function get_outbox()
-	{
-		return query("SELECT p.*, 
-							 r.username \"receiver\"
-						FROM pms p
-						JOIN users r on r.user_id = p.receiver
-						WHERE p.sender = ?
-						ORDER BY p.time DESC",
-						$_SESSION["user"]["user_id"]
-					);
-	}
 
 	function get_active_users($t = 10)
 	{
