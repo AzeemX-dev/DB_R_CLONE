@@ -1,7 +1,7 @@
 <script type="text/javascript">
   $(document).ready(function () {
     $('#ureps').DataTable();
-    $('#ureps_wrapper').css({"padding":"10px"});
+    $('#ureps_wrapper').css({"padding":"75px"});
   });
 </script>
 
