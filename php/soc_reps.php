@@ -12,7 +12,7 @@
 					"soc_reps.php"
 				],
 				[
-					"title"=> $title." - Reported societies",
+					"title"=> $title." - Reported Subreddits",
 					"reps"=> $reps
 			    ]
 		   );
