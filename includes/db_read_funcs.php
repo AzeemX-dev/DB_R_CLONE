@@ -5,10 +5,11 @@
 	*/
 	function get_society($sname, $show_deleted = false)
 	{
-		return  (($s = query("	SELECT 	*
-								FROM societies 
-								
-								WHERE soc_name = ?",
+		return  (($s = query("	SELECT 	s.*, d.info, d.revised_by, d.time,r.username revised_by
+								FROM societies s 
+								LEFT JOIN soc_details d on d.soc_id = s.soc_id
+								JOIN users r on r.user_id = d.revised_by
+								WHERE s.soc_name = ?",
 								$sname
 					  		)
 				)
