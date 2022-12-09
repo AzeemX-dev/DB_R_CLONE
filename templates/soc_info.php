@@ -3,21 +3,14 @@
 	<div class="panel-heading">
 		<div class="row">
 			<h3 class="col-md-3">About <?php echo $soc["soc_name"]; ?></h3>
-			<div class="col-md-9" style="float:right;">
-				<div style="float:right;">
-				<a class="btn btn-default" data-toggle="modal" data-target="#soc-info-edit"><i class="fa fa-pencil-square-o"/></i>	Edit</a>
-				<a class="btn btn-default" data-toggle="modal" data-target="#soc-info-hist"><i class="fa fa-history"/></i>	View history</a>
-				</div>
-			</div>
+			
 		</div>
 	</div>
 	<div class="panel-body well">
 		<?php 
 			if ($soc["info"])
 			{
-				echo "<small><p>Latest revision by ".u($soc["revised_by"]);
-				echo " (".$soc["time"].")";
-				echo "<p></small>";
+				
 				echo "<div class=\"well\"><p>".$soc["info"]."</p></div>";
 			}
 		?>
