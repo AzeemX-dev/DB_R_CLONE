@@ -2,7 +2,7 @@
 <script>
 	$(document).ready(function() {
 		$('#user_bans').DataTable();
-		$('#user_bans_wrapper').css({"padding":"10px"});
+		$('#user_bans_wrapper').css({"padding":"75px"});
 	} );
 </script>
 
