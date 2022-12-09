@@ -72,7 +72,7 @@
 <input type="submit" name="submitUsers">
 	
 <form method="post">
-<label>Search Societies</label>
+<label>Search Subreddits</label>
 <input type="text" name="searchSoc">
 <input type="submit" name="submitSoc">
 </form>
@@ -134,7 +134,7 @@ if (isset($_POST["submitSoc"])) {
 		<br><br><br>
 		<table>
 			<tr>
-				<th>Society Name</th>
+				<th>Subreddit Name</th>
 				<th>Status</th>
 			</tr>
 			<tr>
