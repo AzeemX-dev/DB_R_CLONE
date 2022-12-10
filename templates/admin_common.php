@@ -30,7 +30,7 @@
 			<li role="navigation" class=<?php echo $t=="locks" ? "active":""?>>
 				<a href=<?php echo $pg."locks" ?>>
 					<span class="glyphicon glyphicon-lock"></span>
-					Locked Societies
+					Locked Subreddits
 				</a>
 			</li>
 			<li role="navigation" class=<?php echo $t=="log" ? "active":""?>>
@@ -50,7 +50,7 @@
 				<a href=<?php echo $pg."sreps" ?>>
 					<span class="glyphicon glyphicon-warning-sign"></span>
 					<span class="glyphicon glyphicon-home"></span>
-					Reported societies
+					Reported subreddits
 				</a>
 			</li>
 		</ul>
