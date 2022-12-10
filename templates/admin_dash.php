@@ -10,7 +10,7 @@
         var data1 = <?php echo json_encode($asocs); ?>;
         // prepare jqxChart settings
         var settings1 = {
-            title: "Top 10 most active societies today",
+            title: "Top 10 most active subreddits today",
             showLegend: true,
             enableAnimations: true,
             padding: { left: 20, top: 5, right: 20, bottom: 5 },
@@ -48,7 +48,7 @@
         var data2 = <?php echo json_encode($gsocs); ?>;
         // prepare jqxChart settings
         var settings2 = {
-            title: "Fastest growing societies today",
+            title: "Fastest growing subreddits today",
             showLegend: true,
             enableAnimations: true,
             padding: { left: 20, top: 5, right: 20, bottom: 5 },
